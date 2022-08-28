@@ -52,7 +52,7 @@ function showBooks(){
 }
 
 function updateButtons(){
-    deleteButton = document.querySelectorAll(".remove"); //Update remove buttons.
+    deleteButton = document.querySelectorAll(".remove"); //Update buttons.
     console.log(deleteButton)
     deleteButton.forEach((dB)=>{
         dB.addEventListener("click", ()=>{
