@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #F9A828;
+}
+.wrapper{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.top_content{
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    min-height: 40vh;
+    margin: 0 auto;
+    background-color: #ECECEB;
+}
+
+input[type=text], input[type=submit]{
+    padding: 40px 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.container{
+    min-height: 60vh;
+    background-color: #ECECEB;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box{
+    background-color: #F8F8F8;
+    border-radius: 14px;
+    border: 2px solid;
+    width: 200px;
+    height: 200px;
+}
+
+.text{
+    height: 60%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.read{
+    padding: 10px 0px;
+    height: 20%;
+    background-color: #65C18C;
+    text-align: center;
+    cursor: pointer;
+}
+
+.remove{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 20%;
+    background-color: #FF6363;
+    padding: 10px 0px;
+    cursor: pointer;
+    text-align: center;
+}
