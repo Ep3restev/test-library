@@ -33,7 +33,7 @@ function dataFromUser(){
 
 function showBooks(){
     const container = document.querySelector(".container");  //Container with the books.
-    //Updates boxes by deleting all of them and inserting by looping to avoid repetition.
+    //Updates boxes by deleting all of them and inserting again to avoid repetition.
     boxes = document.querySelectorAll(".box");
     boxes.forEach(box=>{
         box.remove();
@@ -52,12 +52,11 @@ function showBooks(){
 }
 
 function updateButtons(){
-    deleteButton = document.querySelectorAll(".remove"); //Update buttons.
-    console.log(deleteButton)
+    deleteButton = document.querySelectorAll(".remove"); //Update remove buttons.
     deleteButton.forEach((dB)=>{
         dB.addEventListener("click", ()=>{
             const index = dB.getAttribute("data-index");
-            library.splice(index, index)
+            library.splice(index,1)
             showBooks()
         });
     })
